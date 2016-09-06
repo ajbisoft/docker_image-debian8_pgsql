@@ -2,9 +2,9 @@
 
 ## Description
 
-Official Debian 8 (debian:8) + postgres docker image with some customization:
+Official Debian 8 (debian:8) + postgresql docker image with some customization:
 * /etc/apt/sources.list modified to include jessie-updates and to use Polish mirror by default
-* ENTRYPOINT set to autostart postgres service
+* ENTRYPOINT set to autostart postgresql service
 
 ## Usage
 
