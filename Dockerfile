@@ -6,4 +6,4 @@ RUN apt-get update && apt-get -y install postgresql \
 COPY docker-entrypoint.sh /
 EXPOSE 5432
 USER postgres
-ENTRYPOINT ["/docker-entrypoint.sh"]
+CMD ["/usr/lib/postgresql/9.4/bin/postgres", "-D", "/var/lib/postgresql/9.4/main", "-c", "config_file=/etc/postgresql/9.4/main/postgresql.conf"]
