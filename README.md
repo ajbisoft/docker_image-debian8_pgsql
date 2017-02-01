@@ -15,7 +15,7 @@ There are two main run-time settings that may be passed to newly created contain
 ## Example
 
 To successfully start a new container using this image please specify port (here port 3306) and volume options as in following example:
-`docker run -dp 5432:5432 -v <path_to_your_datadir>:/var/lib/postgresql --name <your-app-name> ajbisoft/debian8-pgsql`
+`docker run -dp 5432:5432 -v <path_to_your_datadir>:/var/lib/postgresql --name <your-app-name> ajbisoft/debian8_pgsql`
 This will expose and publish mysql container on port 5432 on all host interfaces, but you may skip `-p 5432:5432` option and use container linking to access PostgreSQL container from within your app.
 
 ## Summary
